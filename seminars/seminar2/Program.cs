@@ -88,3 +88,20 @@
 // Metod (num, num2);
 
 
+// // Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+
+// 456 -> 5
+// 782 -> 8
+// 918 -> 1
+
+void Metod (int num)
+{
+    int dec = num % 100;
+    int ed = num % 10;
+    int dva = (dec - ed)/10;
+    Console.WriteLine($"Вторая цифра числа {num} является {dva}");
+
+}
+Console.WriteLine("Введите трехзначное число");
+int num = Convert.ToInt32(Console.ReadLine());
+Metod(num);
