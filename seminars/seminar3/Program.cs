@@ -1,0 +1,78 @@
+﻿// Задание1.  Напишите программу,
+// которая принимает на вход координаты точки (X и Y), 
+// причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка.
+
+// int FindQuart (double x, double y)
+// {
+//     if(x > 0 && y > 0) return 1;
+//     if(x < 0 && y > 0) return 1;
+//     if(x < 0 && y < 0) return 1;
+//     if(x > 0 && y > 0) return 1;
+//     return 0;
+// }
+// Console.WriteLine("Введите x:");
+// int x = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите y:");
+// int y = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine($"Номер четверти {FindQuart (x, y)}");
+
+//Задача 3. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
+
+//A (3,6); B (2,1) -> 5,09
+//A (7,-5); B (1,-1) -> 7,21
+
+// double FindDistance (double xa, double ya, double xb, double yb)
+// {
+//     return Math.Round(Math.Sqrt(Math.Pow(xb-xa,2) + Math.Pow(yb-ya,2)),2);
+// }
+// Console.WriteLine("Введите координату xa:");
+// double xa = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Введите координату xb:");
+// double xb = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Введите координату ya:");
+// double ya = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Введите координату yb:");
+// double yb = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine($" Дистанция между координатами -> {FindDistance (xa, xb, ya, yb)}");
+
+//Задача 2.Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).
+
+// void Diapazon (int cheat)
+// {
+//     if (cheat > 0 && cheat < 5)
+//     {
+//         if(cheat == 1) Console.WriteLine("Диапазон координат: x > 0, y > 0");
+//         if(cheat == 2) Console.WriteLine("Диапазон координат: x < 0, y > 0");
+//         if(cheat == 3) Console.WriteLine("Диапазон координат: x < 0, y < 0");
+//         if(cheat == 4) Console.WriteLine("Диапазон координат: x > 0, y < 0");
+//     }
+//     else
+//     {
+//         Console.WriteLine(" Такой четверти нет ");
+//     }
+// }
+// Console.WriteLine("Введите четверть");
+// int cheat = Convert.ToInt32(Console.ReadLine());
+// Diapazon(cheat);
+
+//Задача 4. Напишите программу которая принимает на вход число (N) и выдает на консоль квадраты чисел от 1 до N
+
+// void Quad (int x, int y)
+// {
+//     while (x >= y)
+//     {
+//         Console.WriteLine($" Корень числа {y} равен {y * y}");
+//         y++;
+//     }
+// }
+
+// Console.WriteLine("Введите число N, чтобы далее увидеть квадраты чисел до этого числа от 1 до N");
+// int N = Convert.ToInt32(Console.ReadLine());
+// int y = 1;
+// Quad (N, y);
+
+// Задача 19
+
+// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+
