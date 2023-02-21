@@ -56,7 +56,7 @@
 //78 -> 2
 //89126 -> 5
 
-// void Kolvo(int Numbers)
+// int Kolvo(int Numbers)
 // {
 //     int current = 0;
 //     for (int i = 0; 0 < Numbers; i++)
@@ -64,12 +64,13 @@
 //         Numbers = Numbers / 10;
 //         current++;
 //     }
-//     Console.WriteLine($"В числе количество цифр равно {current}");
+//     return current;
 // }
 
 // Console.WriteLine("Введите число");
 // int num = Convert.ToInt32(Console.ReadLine());
-// Kolvo(num);
+// Console.Write($"В числе {num} количество цифр равно {Kolvo(num)}");
+
 
 
 //Задача 3. Напишите программу, которая принимает на вход число N и выдаёт произведение чисел от 1 до N.
