@@ -75,4 +75,42 @@
 // Задача 19
 
 // Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+// 14212 -> нет
 
+// 12821 -> да
+
+// 23432 -> да
+
+void Palindrom (int Numbers)
+{
+    if (Numbers < 100000)
+    {
+        int dthousand = Numbers / 10000;
+        Console.WriteLine($"Число dthousand = {dthousand}");
+        int thousand = (Numbers / 1000) - (dthousand * 10);
+        Console.WriteLine($"Число thousand = {thousand}");
+        int hundred = (Numbers / 100) - (Numbers / 1000 * 10);
+        Console.WriteLine($"Число hundred = {hundred}");
+        int dec = (Numbers / 10) - (Numbers / 100 * 10);
+        Console.WriteLine($"Число dec = {dec}");
+        int ed = Numbers % 10;
+        Console.WriteLine($"Число ed = {ed}");
+        if (dthousand == ed & thousand == dec)
+        {
+            Console.WriteLine($"Число {Numbers} является Палиндромом");
+        }
+        else
+        {
+            Console.WriteLine($"Число {Numbers} не является Палиндромом");
+        }
+    }
+    else
+    {
+        Console.WriteLine($"Число {Numbers} не является Пятизначным");
+    }
+    
+}
+
+Console.WriteLine("Введите пятизначное число, чтобы увидеть является ли оно Палиндромом");
+int Numbers = Convert.ToInt32(Console.ReadLine());
+Palindrom (Numbers);
