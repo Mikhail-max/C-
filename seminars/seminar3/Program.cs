@@ -81,36 +81,82 @@
 
 // 23432 -> да
 
-void Palindrom (int Numbers)
-{
-    if (Numbers < 100000)
-    {
-        int dthousand = Numbers / 10000;
-        Console.WriteLine($"Число dthousand = {dthousand}");
-        int thousand = (Numbers / 1000) - (dthousand * 10);
-        Console.WriteLine($"Число thousand = {thousand}");
-        int hundred = (Numbers / 100) - (Numbers / 1000 * 10);
-        Console.WriteLine($"Число hundred = {hundred}");
-        int dec = (Numbers / 10) - (Numbers / 100 * 10);
-        Console.WriteLine($"Число dec = {dec}");
-        int ed = Numbers % 10;
-        Console.WriteLine($"Число ed = {ed}");
-        if (dthousand == ed & thousand == dec)
-        {
-            Console.WriteLine($"Число {Numbers} является Палиндромом");
-        }
-        else
-        {
-            Console.WriteLine($"Число {Numbers} не является Палиндромом");
-        }
-    }
-    else
-    {
-        Console.WriteLine($"Число {Numbers} не является Пятизначным");
-    }
+// void Palindrom (int Numbers)
+// {
+//     if (Numbers < 100000)
+//     {
+//         int dthousand = Numbers / 10000;
+//         Console.WriteLine($"Число dthousand = {dthousand}");
+//         int thousand = (Numbers / 1000) - (dthousand * 10);
+//         Console.WriteLine($"Число thousand = {thousand}");
+//         int hundred = (Numbers / 100) - (Numbers / 1000 * 10);
+//         Console.WriteLine($"Число hundred = {hundred}");
+//         int dec = (Numbers / 10) - (Numbers / 100 * 10);
+//         Console.WriteLine($"Число dec = {dec}");
+//         int ed = Numbers % 10;
+//         Console.WriteLine($"Число ed = {ed}");
+//         if (dthousand == ed & thousand == dec)
+//         {
+//             Console.WriteLine($"Число {Numbers} является Палиндромом");
+//         }
+//         else
+//         {
+//             Console.WriteLine($"Число {Numbers} не является Палиндромом");
+//         }
+//     }
+//     else
+//     {
+//         Console.WriteLine($"Число {Numbers} не является Пятизначным");
+//     }
     
-}
+// }
 
-Console.WriteLine("Введите пятизначное число, чтобы увидеть является ли оно Палиндромом");
-int Numbers = Convert.ToInt32(Console.ReadLine());
-Palindrom (Numbers);
+// Console.WriteLine("Введите пятизначное число, чтобы увидеть является ли оно Палиндромом");
+// int Numbers = Convert.ToInt32(Console.ReadLine());
+// Palindrom (Numbers);
+
+// Задача 21
+
+// Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+
+// A (3,6,8); B (2,1,-7), -> 15.84
+
+// A (7,-5, 0); B (1,-1,9) -> 11.53
+
+// double FindDistance3D (double xa, double xb, double ya, double yb, double za, double zb)
+// {
+//     return Math.Round(Math.Sqrt(Math.Pow(xb-xa,2) + Math.Pow(yb-ya,2) + Math.Pow(zb-za,2)),2);
+// }
+// Console.WriteLine("Введите координату xa:");
+// double xa = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Введите координату ya:");
+// double ya = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Введите координату za:");
+// double za = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Введите координату xb:");
+// double xb = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Введите координату yb:");
+// double yb = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Введите координату zb:");
+// double zb = Convert.ToDouble(Console.ReadLine());
+
+// Console.WriteLine($" Дистанция между координатами -> {FindDistance3D (xa, xb, ya, yb, za, zb)}");
+
+// Задача 23
+
+// Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+
+// 3 -> 1, 8, 27
+// 5 -> 1, 8, 27, 64, 125
+
+// void Cub3 (int num)
+// {
+//         for (int i = 1; i <= num; i++)
+//     {
+//         Console.Write($"{Math.Pow(i,3)} ");
+//     }
+// }
+
+// Console.WriteLine("Введите число N, чтобы далее увидеть кубы чисел от 1 до N");
+// int N = Convert.ToInt32(Console.ReadLine());
+// Cub3 (N);
