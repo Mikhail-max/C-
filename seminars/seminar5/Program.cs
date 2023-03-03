@@ -270,44 +270,44 @@
 // [3 7 22 2 78] -> 76
 
 
-double[] CreateRandomArray(int size, int minValue, int maxValue) 
-{
-    double[] array = new double[size];
-    Random rand = new Random();
-    for(int i = 0;i < array.Length; i++)
-    {
-        array[i] = rand.Next(minValue, maxValue + 1) + Math.Round(rand.NextDouble(), 3);
-    }
-    return array;
-}
+// double[] CreateRandomArray(int size, int minValue, int maxValue) 
+// {
+//     double[] array = new double[size];
+//     Random rand = new Random();
+//     for(int i = 0;i < array.Length; i++)
+//     {
+//         array[i] = rand.Next(minValue, maxValue + 1) + Math.Round(rand.NextDouble(), 3);
+//     }
+//     return array;
+// }
 
-void ShowArray (double[] array)
-{
-    for(int i = 0;i < array.Length; i++)
-    {
-        Console.Write(array[i] + " ");
-    }
-    Console.WriteLine();
-}
+// void ShowArray (double[] array)
+// {
+//     for(int i = 0;i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }
+//     Console.WriteLine();
+// }
 
-void FindMinMaxdif (double[] array)
-{
-    double min = array[0];
-    double max = array[0];
-    for (int i = 1; i < array.Length; i++)
-    {
-       if (array[i] > max) max = array[i];
-       if (array[i] < min) min = array[i];
-    }
-    Console.WriteLine($"The difference between {max} and {min} values is {max - min}");
-}
+// void FindMinMaxdif (double[] array)
+// {
+//     double min = array[0];
+//     double max = array[0];
+//     for (int i = 1; i < array.Length; i++)
+//     {
+//        if (array[i] > max) max = array[i];
+//        if (array[i] < min) min = array[i];
+//     }
+//     Console.WriteLine($"The difference between {max} and {min} values is {max - min}");
+// }
 
-Console.WriteLine("Input array size");
-int size = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input minimal value of array element");
-int minValue = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input max value of array element");
-int maxValue = Convert.ToInt32(Console.ReadLine());
-Double[] myArray = CreateRandomArray(size, minValue, maxValue);
-ShowArray(myArray);
-FindMinMaxdif(myArray);
+// Console.WriteLine("Input array size");
+// int size = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input minimal value of array element");
+// int minValue = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input max value of array element");
+// int maxValue = Convert.ToInt32(Console.ReadLine());
+// Double[] myArray = CreateRandomArray(size, minValue, maxValue);
+// ShowArray(myArray);
+// FindMinMaxdif(myArray);
