@@ -44,4 +44,4 @@ Console.WriteLine("Input M");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input N");
 int n = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(Sum(m, n)); 
+Console.WriteLine(Sum(m, n));
